@@ -1,28 +1,5 @@
 {
   "name": "Workspace Full",
-  "image": "mcr.microsoft.com/devcontainers/base:debian",
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/go:1": {
-      "version": "1.25.1"
-    },
-    "ghcr.io/devcontainers/features/common-utils:2": {},
-    "ghcr.io/devcontainers/features/user:1": {
-      "username": "coder",
-      "uid": 1000,
-      "gid": 1000
-    }
-  },
-  "postCreateCommand": "echo 'Container ready'",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "golang.go"
-      ]
-    }
-  },
-  "mounts": [],
-  "forwardPorts": [3000, 8000, 8080],
-  "remoteUser": "coder"
+  "image": "mcr.microsoft.com/devcontainers/go:0-1.20-bullseye",
+  "forwardPorts": [3000]
 }
