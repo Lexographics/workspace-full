@@ -1,0 +1,28 @@
+{
+  "name": "Workspace Full",
+  "image": "debian:bullseye-slim",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.25.1"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/user:1": {
+      "username": "coder",
+      "uid": 1000,
+      "gid": 1000
+    }
+  },
+  "postCreateCommand": "echo 'Container ready'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  },
+  "mounts": [],
+  "forwardPorts": [3000, 8000, 8080],
+  "remoteUser": "coder"
+}
