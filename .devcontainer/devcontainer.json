@@ -1,5 +1,9 @@
 {
   "name": "Workspace Full",
-  "image": "mcr.microsoft.com/devcontainers/go:0-1.25-1-bullseye",
-  "forwardPorts": [3000]
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {},
+  "mounts": [],
+  "remoteUser": "coder"
 }
