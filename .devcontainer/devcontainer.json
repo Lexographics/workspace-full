@@ -1,6 +1,8 @@
 {
   "name": "Workspace Full",
-  "image": "debian:bullseye-slim",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
